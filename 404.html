@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home Chat</title>
+    <script type="text/javascript">
+      // GitHub Pages serves this file for unknown paths. Redirect to the SPA
+      // root while preserving the requested path, so BrowserRouter can render it.
+      var segment = 1; // site is served from the domain root
+      var path = window.location.pathname;
+      var parts = path.split('/').filter(Boolean);
+      var newPath = '/' + parts.slice(segment).join('/');
+      window.location.replace(
+        '/' +
+        '?/' + parts.slice(segment).join('/') +
+        (window.location.search ? '&' + window.location.search.slice(1).replace(/&/g, '~and~') : '') +
+        window.location.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
