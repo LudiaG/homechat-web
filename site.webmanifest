@@ -1,0 +1,17 @@
+{
+  "name": "Home Chat — Auckland New Homes",
+  "short_name": "Home Chat",
+  "description": "Auckland new-home discovery for buyers and development partners.",
+  "lang": "en-NZ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#141414",
+  "icons": [
+    {
+      "src": "/homechat-app-icon-transparent-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
